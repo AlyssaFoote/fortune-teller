@@ -13,6 +13,8 @@ function getFortune() {
     } else {
         myPrediction.textContent = "You are a technical difficulty!! But still cute";
     }
+
+    myPrediction.classList.add("visible");
 }
 
 myButton.onclick = () => {

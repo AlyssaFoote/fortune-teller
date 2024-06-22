@@ -72,7 +72,7 @@ h6 {
 html,
 body {
     height: 100vh;
-    background-color: rgba(216, 82, 246, 0.943);
+    background-color: #d71ff7f0;
 }
 
 body {
@@ -87,6 +87,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 1em;
 }
 
 main section {
@@ -119,16 +120,19 @@ button {
     font-size: 1em;
     border: 2px black solid;
     border-radius: 20px;
-    background-color: #B0F551;
+    background-color: #a7e32f;
 }
 
 
 #fortune_told {
-    background-color: #B0F551;
-    border: 3px white solid;
+    background-color: white;
+    border: 3px black solid;
     border-radius: 1em;
     padding: 40px;
     display: none;
+    font-family: Avenir;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 #fortune_told.visible {
