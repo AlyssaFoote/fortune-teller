@@ -1,11 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const myButton = document.querySelector("button");
-    const myPrediction = document.querySelector("#fortune_told");
+    const fortuneButton = document.getElementById("fortuneButton");
+    const myPrediction = document.getElementById("fortune_told");
 
     // Array of fortunes
     const fortunes = [
-        "You are a cutie pie, expect cute pies coming your way",
+        "You are a cutie pie, expect delicious pies in your future",
         "Good fortune is coming your way",
+        "You will pet a cute cat today",
         "You will have a great day today",
         "An exciting opportunity lies ahead",
         "Happiness is in your future",
@@ -27,7 +28,16 @@ document.addEventListener('DOMContentLoaded', () => {
         const randomIndex = Math.floor(Math.random() * fortunes.length);
         myPrediction.textContent = fortunes[randomIndex];
         myPrediction.classList.add("visible");
+        fortuneButton.textContent = "Try your luck again?";
+        fortuneButton.onclick = resetFortune;
     }
 
-    myButton.onclick = getFortune;
+    function resetFortune() {
+        myPrediction.textContent = "";
+        myPrediction.classList.remove("visible");
+        fortuneButton.textContent = "I sure do";
+        fortuneButton.onclick = getFortune;
+    }
+
+    fortuneButton.onclick = getFortune;
 });
