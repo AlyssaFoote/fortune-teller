@@ -1,7 +1,7 @@
 let myButton = document.querySelector("button");
 let myPrediction = document.querySelector("#fortune_told");
 
-function fortune() {
+function getFortune() {
     let fortuneNum = Math.floor(Math.random() * 3);
 
     if (fortuneNum === 0) {
@@ -16,5 +16,5 @@ function fortune() {
 }
 
 myButton.onclick = () => {
-    fortune();
+    getFortune();
 }
