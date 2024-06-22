@@ -122,8 +122,15 @@ button {
     background-color: #B0F551;
 }
 
+
 #fortune_told {
     background-color: #B0F551;
     border: 3px white solid;
     border-radius: 1em;
+    padding: 40px;
+    display: none;
+}
+
+#fortune_told.visible {
+    display: block;
 }
